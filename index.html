@@ -34,8 +34,12 @@
         }
       };
 
-      if (!document.requestFullscreen) {
+      if (!document.documentElement.requestFullscreen) {
         document.write('<p>fullscreen not support</p>');
+      }
+
+      document.onerror = (err) => {
+        document.write(`<p>${err.message}</p>`);
       }
     </script>
   </body>
