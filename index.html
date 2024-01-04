@@ -25,6 +25,18 @@
       setInterval(() => {
         document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
       }, 30_000);
+
+      document.querySelector('button').onclick = () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      };
+
+      if (!document.requestFullscreen) {
+        document.write('<p>fullscreen not support</p>');
+      }
     </script>
   </body>
 </html>
