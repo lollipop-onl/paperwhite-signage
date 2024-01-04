@@ -12,8 +12,16 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <p style="color: black; font-family: IBM Plex Sans JP;">Hello World</p>
-    <p style="color: white; font-family: IBM Plex Sans JP;">See you later</p>
+  <body style="font-family: IBM Plex Sans JP">
+    <p style="color: black">Hello World</p>
+    <p style="color: white">See you later</p>
+    <button>Toggle Color</button>
+    <script>
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
+      });
+    </script>
   </body>
 </html>
