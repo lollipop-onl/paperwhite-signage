@@ -2,12 +2,13 @@ import React from 'react';
 
 export const App: React.FC = () => {
   return (
-    <div className='max-w-screen-md mx-auto px-4 py-10'>
-      <article className='prose'>
-        <h1>react-app</h1>
-        <p>This is a React application template.</p>
-        <p>with Vite, TypeScript, TailwindCSS and daisyUI</p>
-      </article>
+    <div className="h-screen w-screen">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+        consequatur enim velit ab praesentium molestias quaerat doloremque
+        voluptatem ullam. Quidem facilis iste natus unde laboriosam accusamus
+        numquam eaque similique dicta.
+      </p>
     </div>
   );
 };
