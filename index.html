@@ -25,18 +25,16 @@
       setInterval(() => {
         document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
       }, 30_000);
+      
+      const p = document.querySelector('p');
 
       document.querySelector('button').onclick = () => {
         if (!document.fullscreenElement) {
-          document.documentElement.requestFullscreen();
+          p.requestFullscreen();
         } else if (document.exitFullscreen) {
           document.exitFullscreen();
         }
       };
-
-      if (!document.documentElement.requestFullscreen) {
-        document.write('<p>fullscreen not support</p>');
-      }
 
       document.onerror = (err) => {
         document.write(`<p>${err.message}</p>`);
