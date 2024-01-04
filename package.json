@@ -1,0 +1,41 @@
+{
+  "name": "@lollipop-onl/react-app",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lollipop-onl/react-app"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "simochee",
+    "email": "lollipop@simochee.net",
+    "url": "https://github.com/lollipop-onl"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier --write --loglevel warn \"**/*.{ts,tsx,cjs,js,html,json,yml,yaml}\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@tsconfig/vite-react": "^2.0.1",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^3.8.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.0.3",
+    "prettier-plugin-packagejson": "^2.4.8",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.12",
+    "vite-tsconfig-paths": "^4.2.1"
+  }
+}
